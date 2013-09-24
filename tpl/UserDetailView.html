@@ -1,0 +1,17 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title"><%= name %></h3>
+	</div>
+	<div class="panel-body">
+		<img src="<%= photo.smallPhotoUrl %>" style="width:100px;"/>
+		<br/>
+		<%= username %>
+		<br/>
+		<%= title %>
+		<br/>
+		<%= companyName %>
+		<br/>
+		<%= address.formattedAddress %>
+	</div>
+	<div class="panel-footer"><a href="mailto:<%= email %>">Email</a></div>
+</div>

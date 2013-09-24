@@ -1,0 +1,11 @@
+<% 
+var priorityLabelClass = "label-default";
+if (Priority == "Normal") {
+    priorityLabelClass = "label-info";
+} else if (Priority == "High") {
+    priorityLabelClass = "label-danger";
+}
+%>
+<td><%= ActivityDate %></td>
+<td><%= Subject %></td>
+<td><span class="label <%= priorityLabelClass %>"><%= Priority %></span></td>
